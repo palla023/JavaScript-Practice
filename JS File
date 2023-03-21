@@ -1,0 +1,15 @@
+console.log("==============>  Remove an element from an beginning of an array  ==============>")
+let arrBeg = [1, 2, 3, 4, 5];
+arrBeg.shift();
+console.log(arrBeg);
+
+// sample array
+let myArray = ["apple", "banana", "orange", "grape"];
+// loop through the array and shift elements to the left
+for (let i = 0; i < myArray.length - 1; i++) {
+  myArray[i] = myArray[i + 1];
+}
+// remove the last element of the array
+myArray.length = myArray.length - 1;
+// output the resulting array
+console.log(myArray); // Output: ["banana", "orange", "grape"]
